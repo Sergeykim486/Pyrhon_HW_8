@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "f_name": "Ivan",
+    "l_name": "Ivanov",
+    "phone": "+998901000101",
+    "email": "ivanov@mail.ru",
+    "job_title": 1,
+    "department": 1
+  },
+  {
+    "id": 2,
+    "f_name": "Aleksandr",
+    "l_name": "Sidorov",
+    "phone": "+998901000102",
+    "email": "sidorov_s@gmail.com",
+    "job_title": 3,
+    "department": 5
+  },
+  {
+    "id": 3,
+    "f_name": "Vladimir",
+    "l_name": "Vladimirov",
+    "phone": "+998901000103",
+    "email": "vlvl@yandex.ru",
+    "job_title": 3,
+    "department": 5
+  }
+]

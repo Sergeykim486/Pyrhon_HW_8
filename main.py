@@ -1,14 +1,9 @@
-import edit, menu, messagestouser, opensave, search, visual, os, functions, sys
+import edit, menu, messagestouser, opensave, visual, os, functions, sys, searchitem
 from colorama import Fore, Back
 
 members = opensave.openjsonfile('comembers.json')
 jobtitles = opensave.openjsonfile('jobtitle.json')
 departments = opensave.openjsonfile('department.json')
-
-def errors():
-    os.system('cls')
-    print(Fore.RED + '  ОШИБКА!!!\n НЕ ВЕРНЫЙ ВВОД ПОВТОРИТЕ ПОПЫТКУ.' + Fore.RESET)
-    input('Чтобы продолжить нажмите [ENTER]...')
 
 def main():
     global members, jobtitles, departments
@@ -21,9 +16,9 @@ def main():
             elif int(choice) == 0:
                 sys.exit()
             else:
-                errors()
+                messagestouser.errors()
         else:
-            errors()
+            messagestouser.errors()
 
 def memberslist():
     global members, jobtitles, departments
@@ -34,12 +29,22 @@ def memberslist():
             if int(choice) == 0:
                 main()
             elif int(choice) == 1:
-                visual.print_result(' С О Т Р У Д Н И К И -> ПОЛНЫЙ СПИСОК', visual.menu_list(functions.genlist(members)))
-                input('Чтобы продолжить нажмите [ENTER]...')
+                visual.print_result(' С О Т Р У Д Н И К И -> ПОЛНЫЙ СПИСОК', visual.menu_list(searchitem.findobject('', members)))
+                memid = int(input('Выберите позицию... ->  '))
+                selectedmember = searchitem.getitembyid(members, memid)
+                h1 = str(selectedmember['f_name']) + ' ' + str(selectedmember['l_name'])
+                edit.editmenu(h1, members, memid)
+            elif int(choice) == 2:
+                visual.print_result(' С О Т Р У Д Н И К И -> ПОИСК', 'Для поиска объекта,\nвведите имя, фамилию, должность или подразделение...')
+                visual.print_result(' С О Т Р У Д Н И К И -> РЕЗУЛЬТАТ ПОИСКА', visual.menu_list(searchitem.findobject(input('Введите текст ->  '), members)))
+                memid = int(input('Выберите позицию... ->  '))
+                selectedmember = searchitem.getitembyid(members, memid)
+                h1 = str(selectedmember['f_name']) + ' ' + str(selectedmember['l_name'])
+                edit.editmenu(h1, members, memid)
             else:
-                errors()
+                messagestouser.errors()
         else:
-            errors()
+            messagestouser.errors()
 
 
 

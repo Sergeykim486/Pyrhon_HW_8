@@ -5,17 +5,12 @@ def genlist(data):
     for i in data:
         line = ''
         for j in i:
-            if j == 'job_title':
-                jobtitles = opensave.openjsonfile('jobtitle.json')
-                for item in jobtitles:
-                    if ['id'] == j:
-                        line = line + ' ' + item['name']
-            elif j == 'department':
-                departments = opensave.openjsonfile('department.json')
-                for item in departments:
-                    if ['id'] == j:
-                        line = line + ' ' + item['name']
-            else:
-                line = line + ' ' + str(i[j])
+                if j == 'id':
+                    line = line + ' ' + str(i[j]).ljust(4)
+                elif j == 'f_name':
+                    line = line + ' ' + str(i[j]).ljust(12)
+                elif j == 'l_name':
+                    line = line + ' ' + str(i[j]).ljust(12)
         res.append(line)
     return res
+

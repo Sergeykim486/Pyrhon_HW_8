@@ -32,3 +32,4 @@ def print_result(header, res):
       print(Fore.GREEN + border2 + Fore.RESET)
       print(res)
       print(Fore.GREEN + Border1 + Fore.RESET)
+

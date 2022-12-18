@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "f_name": "Ivan",
-    "l_name": "Ivanov",
+    "f_name": "\u0418\u0432\u0430\u043d",
+    "l_name": "\u0418\u0432\u0430\u043d\u043e\u0432",
     "phone": "+998901000101",
     "email": "ivanov@mail.ru",
     "job_title": 1,
@@ -10,10 +10,10 @@
   },
   {
     "id": 2,
-    "f_name": "Aleksandr",
-    "l_name": "Sidorov",
-    "phone": "+998901000102",
-    "email": "sidorov_s@gmail.com",
+    "f_name": "\u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440",
+    "l_name": "\u0421\u0438\u0434\u043e\u0440\u043e\u0432",
+    "phone": "+998900010102",
+    "email": "Alex@gmail.com",
     "job_title": 3,
     "department": 5
   },
@@ -25,5 +25,32 @@
     "email": "vlvl@yandex.ru",
     "job_title": 3,
     "department": 5
+  },
+  {
+    "id": 4,
+    "f_name": "\u0421\u0435\u0440\u0433\u0435\u0439",
+    "l_name": "\u0421\u0435\u0440\u0433\u0435\u0435\u0432",
+    "phone": "+998900010105",
+    "email": "sergey@gmail.com",
+    "job_title": 6,
+    "department": 4
+  },
+  {
+    "id": 5,
+    "f_name": "\u0412\u0430\u0441\u0438\u043b\u0438\u0439",
+    "l_name": "\u0412\u0430\u0441\u0438\u043b\u044c\u0435\u0432",
+    "phone": "+998900010106",
+    "email": "Vasiliy111@mail.ru",
+    "job_title": 3,
+    "department": 4
+  },
+  {
+    "id": 6,
+    "f_name": "\u041c\u0430\u0440\u0438\u044f",
+    "l_name": "\u0421\u0438\u0437\u043e\u0432\u0430",
+    "phone": "+998900010107",
+    "email": "Mary@yandex.ru",
+    "job_title": 6,
+    "department": 4
   }
 ]

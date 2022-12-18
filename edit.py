@@ -13,6 +13,7 @@ def editmenu(h1, item, selectecid, flag):
                     edititem(item, selectecid)
                 elif flag == 2:
                     changesinglitem(item, selectecid)
+                break
             elif int(choice) == 3:
                 removeitem(item, selectecid)
             elif int(choice) == 0:
@@ -86,10 +87,14 @@ def changeitem(choice, item):
             if i != 'id':
                 if i == 'job_title':
                     visual.show_menu('Должности', functions.genlist(opensave.openjsonfile('jobtitle.json')))
-                    item[i] = int(input('Выберите должность... ->  '))
+                    x = input('Выберите должность... ->  ')
+                    if x.isdigit() == True:
+                        item[i] = int(x)
                 elif i == 'department':
                     visual.show_menu('Структурные подразделения', functions.genlist(opensave.openjsonfile('department.json')))
-                    item[i] = int(input('Выберите структурное подразделение... ->  '))
+                    x = input('Выберите структурное подразделение... ->  ')
+                    if x.isdigit() == True:
+                        item[i] = int(x)
                 else:
                     item[i] = input(f'Введите {str(i)} ->  ')
         curindex += 1

@@ -19,12 +19,12 @@
   },
   {
     "id": 3,
-    "f_name": "Vladimir",
-    "l_name": "Vladimirov",
+    "f_name": "\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440",
+    "l_name": "\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440\u043e\u0432",
     "phone": "+998901000103",
     "email": "vlvl@yandex.ru",
     "job_title": 3,
-    "department": 5
+    "department": 2
   },
   {
     "id": 4,
@@ -32,8 +32,8 @@
     "l_name": "\u0421\u0435\u0440\u0433\u0435\u0435\u0432",
     "phone": "+998900010105",
     "email": "sergey@gmail.com",
-    "job_title": 6,
-    "department": 4
+    "job_title": 5,
+    "department": 3
   },
   {
     "id": 5,
@@ -41,8 +41,8 @@
     "l_name": "\u0412\u0430\u0441\u0438\u043b\u044c\u0435\u0432",
     "phone": "+998900010106",
     "email": "Vasiliy111@mail.ru",
-    "job_title": 3,
-    "department": 4
+    "job_title": 4,
+    "department": 1
   },
   {
     "id": 6,
@@ -50,7 +50,7 @@
     "l_name": "\u0421\u0438\u0437\u043e\u0432\u0430",
     "phone": "+998900010107",
     "email": "Mary@yandex.ru",
-    "job_title": 6,
+    "job_title": 2,
     "department": 4
   }
 ]
